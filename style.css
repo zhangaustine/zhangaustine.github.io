@@ -27,10 +27,13 @@
   }
 
 body {
-    color: var(--slimey);
     background-color: var(--auberge);
 }
 
 h1 {
     color: var(--bloch);
+}
+
+p {
+    color: var(--slimey);
 }
