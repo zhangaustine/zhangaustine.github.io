@@ -4,6 +4,11 @@
     --slimey: #689758;
     --bloch: #E3C9CA;
 }
+/* common browsers */
+::selection {
+    background-color: var(--emerald);
+    color: var(--bloch);
+}
 .shrikhand-regular {
     font-family: "Shrikhand", serif;
     font-weight: 400;
@@ -24,26 +29,40 @@
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-  }
+}
+
+.wide-kern {
+    letter-spacing: 0.3em;
+}
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    /* flex-flow: row wrap; */
     justify-content: space-around;
-
     padding: 10px;
     margin: 10px;
     /* list-style: none; */
+    align-items: baseline;
 }
+
 .flex-item {
     padding: 5px;
     text-align: center;
+}
+
+.basic-div {
+    color: var(--bloch);
 }
 
 /* small screens */
 @media all and (max-width: 500px) {
     .flex-container {
         flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-flow: column wrap;
     }
 }
 
@@ -51,10 +70,114 @@ body {
     background-color: var(--auberge);
 }
 
+.header {
+    background-color: var(--slimey);
+    color: var(--auberge);
+    font-size: 30pt;
+    margin: 0px;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.header .burger {
+    align-items: right;
+    flex-flow: row wrap;
+}
+.burger .menu-item {
+    background-color: var(--auberge);
+    color: var(--bloch);
+    padding: 10% 20%;
+    margin: 5%;
+    border-radius: 10%;
+    border: none;
+}
+.menu-item:hover {
+    background: var(--bloch);
+    color: var(--auberge);
+    cursor: pointer;
+}
+
+.splash {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    letter-spacing: .12em;
+    text-align: right;
+    /* max-width: 80%; */
+    overflow: hidden;
+    animation: 2s slide-left;
+}
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        opacity: 0%;
+        /* letter-spacing: -1em; */
+    }
+    to {
+        margin-left: 0%;
+        /* letter-spacing: .12em; */
+    }
+}
+
+.content {
+    background-color: var(--auberge);
+}
+
+.notice {
+    align-items: center;
+    flex-flow: column wrap;
+    color: var(--bloch);
+}
+
+.footer {
+    background-color: var(--slimey);
+    color: var(--auberge);
+    flex-flow: row wrap;
+    margin: 0px;
+}
+
 h1 {
     color: var(--bloch);
+    font-size: 50pt;
 }
 
 p {
     color: var(--slimey);
+    /* white-space: pre-line; */
+    font-size: 21pt;
+}
+
+/* link styles should go in LVHA (link-visited-hover-active) order */
+a {
+    color: var(--emerald);
+}
+a::before {
+    content:'';
+    position: absolute;
+    height: 12px;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+    background: var(--bloch);
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    transition: transform 0.2s ease-in;
+}
+a:hover::before {
+    transform: scaleX(1);
+    /* transform-origin: bottom center; */
+}
+a:hover {
+    color: var(--bloch);
+    background: var(--auberge);
+    font-style: italic;
+    letter-spacing: 12%;
+}
+
+/* graphic elements */
+.vert-line {
+    background: linear-gradient(var(--bloch), var(--emerald));
+    margin-left: 5px;
+    width: 2px;
+    height: 100px;
+    /* animation: 30s ease-in; */
 }
