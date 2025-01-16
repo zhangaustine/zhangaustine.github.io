@@ -30,7 +30,7 @@
 
 /* small screens */
 @media all and (max-width: 500px) {
-    .flex-container {
+    /* .flex-container {
         flex-direction: column;
         align-items: center;
     }
@@ -43,5 +43,5 @@
     }
     #logo {
         font-size: 21pt;
-    }
+    } */
 }
