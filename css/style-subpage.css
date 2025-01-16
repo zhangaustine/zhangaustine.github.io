@@ -1,0 +1,47 @@
+:root {
+    --auberge: #18043B;
+    --emerald: #3C6F58;
+    --slimey: #689758;
+    --bloch: #E3C9CA;
+
+    --forest: #136a49;
+    --rose: #c68994;
+    --mint: #80e597;
+    --seafoam: #b2ead4;
+    --periwinkle: #8198d1;
+    --violent: #391d5a;
+    --magic: #5c3869;
+
+    /* --media-cutoff: 500px;*/ /*change value later if needed */
+    --max-content-width: 960px; /* change value later if needed */
+}
+
+.tag {
+    
+}
+
+.portfolio-container {
+
+}
+.portfolio-item {
+
+}
+
+
+/* small screens */
+@media all and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-flow: column wrap;
+    }
+    header {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #logo {
+        font-size: 21pt;
+    }
+}
