@@ -1,0 +1,292 @@
+:root {
+    --auberge: #18043B;
+    --emerald: #3C6F58;
+    --slimey: #689758;
+    --bloch: #E3C9CA;
+
+    --forest: #136a49;
+    --rose: #c68994;
+    --mint: #80e597;
+    --seafoam: #b2ead4;
+    --periwinkle: #8198d1;
+    --violent: #391d5a;
+    --magic: #5c3869;
+
+    /* --media-cutoff: 500px;*/ /*change value later if needed */
+    --max-content-width: 960px; /* change value later if needed */
+}
+
+/* selection and cursor =======================================  */
+::selection {
+    background-color: var(--emerald);
+    color: var(--bloch);
+}
+
+/* fonts ====================================================== */
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 200 to 800 */
+.karla-i20 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}
+.karla-r35 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+.wide-kern {
+    letter-spacing: 0.3em;
+}
+
+/* "all purpose" wrapper */
+.wrapper {
+    max-width: var(--max-content-width); 
+    margin-inline: auto;
+}
+
+body {
+    background-color: var(--auberge);
+    margin-inline: auto;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--violent);
+    /* color: var(--auberge); */
+    /* font-size: 30pt; */
+
+    min-width: var(--media-cutoff);
+}
+/* media query for mobile headers */
+
+/* header .burger {
+    align-items: right;
+    flex-flow: row wrap;
+}*/
+.header-wrapper {
+    padding: 10px;
+    text-justify: center;
+}
+.logos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+#wordmark {
+    /* padding: 5%; */
+    font-family: "Shrikhand", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* font-size: 69pt; */
+    font-size: 5rem;
+    color: var(--bloch);
+}
+#logo {
+    max-height: 7rem;
+    /* padding: 0em 0.5em; */
+}
+
+.nav-menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-evenly; */
+}
+.nav-menu-item {
+    /* background-color: var(--violent); */
+    color: var(--rose);
+    padding: 0.1em 1em;
+    /* margin: 0.1rem; */
+    border-radius: 1em;
+    border: none;
+
+    font-family: "Karla", sans-serif;
+    /* font-size: 21pt; */
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    /* gap: 1rem 3rem; */
+}
+.nav-menu-item:hover {
+    background: var(--bloch);
+    color: var(--auberge);
+    cursor: pointer;
+    font-style: normal;
+}
+
+.splash {
+    /* width: 80%; */
+    /* justify-content: center; */
+    overflow: hidden;
+    /* margin: 0px; */
+    letter-spacing: .12em;
+    text-align: right;
+    /* max-width: 80%; */
+    animation: 2s slide-left;
+    /* background: linear-gradient(to left, var(--bloch), rgb(0,0,0,0) 12px); */
+    padding: 10px;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+}
+.splash-wrapper {
+    max-width: 500px; 
+    margin-inline: auto;
+    padding: 10px;
+}
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        opacity: 0%;
+        /* letter-spacing: -1em; */
+    }
+    to {
+        margin-left: 0%;
+        /* letter-spacing: .12em; */
+    }
+}
+
+.content {
+    /* display:flex;
+    flex-flow: column nowrap; */
+    background-color: var(--auberge);
+    /* align-items: center; */
+}
+
+.notice {
+    align-items: center;
+    flex-flow: column wrap;
+    color: var(--bloch);
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    /* list-style: none; */
+    align-items: baseline;
+
+    background-color: var(--periwinkle);
+    color: var(--auberge);
+    flex-flow: row wrap;
+    margin: 0px;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+footer a {
+    color: var(--magic);
+}
+#accessibility {
+    font-style: italic;
+}
+
+h1 {
+    color: var(--bloch);
+    font-size: 50pt;
+}
+
+p {
+    color: var(--slimey);
+    /* white-space: pre-line; */
+    font-size: 21pt;
+}
+
+/* link styles should go in LVHA (link-visited-hover-active) order */
+a {
+    color: var(--emerald);
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    color: var(--bloch);
+}
+
+/* fix this later */
+.fancy-link {
+    a {
+        color: var(--emerald);
+        text-decoration: none;
+    }
+    ::before {
+        content:'';
+        position: absolute;
+        height: 12px;
+        left: 0;
+        bottom: -24px;
+        width: 100%;
+        background: var(--bloch);
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        transition: transform 0.2s ease-in;
+    }
+    :hover::before {
+        transform: scaleX(1);
+        /* transform-origin: bottom center; */
+    }
+    :hover {
+        color: var(--bloch);
+        /* background: var(--auberge); */
+        /* font-style: italic; */
+        /* letter-spacing: 12%; */
+    }
+}
+
+/* graphic elements */
+.vert-line {
+    background: linear-gradient(var(--bloch), var(--emerald));
+    margin-left: 5px;
+    width: 2px;
+    height: 100px;
+    /* animation: 30s ease-in; */
+}
+
+/* small screens */
+@media all and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-flow: column wrap;
+    }
+    header {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #wordmark {
+        font-size: 21pt;
+    }
+    #logo {
+        max-height: 69px;
+        padding: 0;
+    }
+
+}
