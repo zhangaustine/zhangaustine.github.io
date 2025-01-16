@@ -47,21 +47,21 @@
 }
 
 /* flexbox definitions ======================================== */
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-flow: column wrap;
-    /* flex-flow: row wrap; */
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10px;
-    /* list-style: none; */
-    align-items: baseline;
+    /*flex-flow: row wrap;
+    /* list-style: none;
+    /* align-items: baseline;
+    /* justify-content: space-around;
+    /*padding: 10px;
+    /*margin: 10px;
 }
 
 .flex-item {
     padding: 5px;
     text-align: center;
-}
+} */
 
 /* "all purpose" wrapper */
 .wrapper {
@@ -70,9 +70,8 @@
 }
 
 body {
-    display: flex;
     background-color: var(--auberge);
-    justify-content: center;
+    margin-inline: auto;
 }
 
 header {
@@ -140,7 +139,7 @@ header {
 }
 
 .splash {
-    width: 50%;
+    width: 80%;
     /* justify-content: center; */
     overflow: hidden;
     /* margin: 0px; */
@@ -174,13 +173,17 @@ header {
 }
 
 .content {
+    /* display:flex;
+    flex-flow: column nowrap; */
     background-color: var(--auberge);
+    /* align-items: center; */
 }
 
 .notice {
     align-items: center;
     flex-flow: column wrap;
     color: var(--bloch);
+    text-align: center;
 }
 
 footer {
