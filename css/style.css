@@ -123,7 +123,6 @@ header {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-
     /* gap: 1rem 3rem; */
 }
 .nav-menu-item:hover {
@@ -131,6 +130,20 @@ header {
     color: var(--auberge);
     cursor: pointer;
     font-style: normal;
+}
+.nav-menu-item-onpage {
+    color: var(--rose);
+    padding: 0.1em 1em;
+    border-radius: 1em;
+    border: none;
+
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    color: var(--periwinkle);
 }
 
 .splash {
@@ -172,6 +185,39 @@ header {
     flex-flow: column nowrap; */
     background-color: var(--auberge);
     /* align-items: center; */
+}
+
+/* experience page - alternate color themes */
+.position-A {
+    background-color:var(--emerald);
+    /* h1, use for job title */
+    h1 {
+
+    }
+    /* h2, use for company and/or location */
+    h2 {
+
+    }
+    /* h3, use for time range */
+    h3 {
+
+    }
+}
+
+.position-B {
+    background-color:var(--forest);
+    /* h1, use for job title */
+    h1 {
+
+    }
+    /* h2, use for company and/or location */
+    h2 {
+
+    }
+    /* h3, use for time range */
+    h3 {
+
+    }
 }
 
 .notice {
@@ -270,10 +316,10 @@ a:hover {
 
 /* small screens */
 @media all and (max-width: 500px) {
-    .flex-container {
+    /* .flex-container {
         flex-direction: column;
         align-items: center;
-    }
+    } */
     .footer {
         flex-flow: column wrap;
     }
