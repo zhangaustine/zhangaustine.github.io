@@ -52,6 +52,16 @@
     margin-inline: auto;
 }
 
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
 body {
     background-color: var(--auberge);
     margin-inline: auto;
@@ -154,7 +164,7 @@ header {
     letter-spacing: .12em;
     text-align: right;
     /* max-width: 80%; */
-    animation: 2s slide-left;
+    /* animation: 2s slide-left; */
     /* background: linear-gradient(to left, var(--bloch), rgb(0,0,0,0) 12px); */
     padding: 10px;
 
@@ -313,6 +323,9 @@ a:hover {
     height: 100px;
     /* animation: 30s ease-in; */
 }
+#star-sep {
+    font-weight: 700;
+}
 
 /* small screens */
 @media all and (max-width: 500px) {
@@ -322,6 +335,12 @@ a:hover {
     } */
     .footer {
         flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+    #accessibility {
+        font-size: smaller;
+        text-align: center;
     }
     header {
         flex-flow: column wrap;
