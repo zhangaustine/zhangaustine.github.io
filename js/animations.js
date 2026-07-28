@@ -18,7 +18,7 @@ function runTyper() {
     setTimeout(function() {
         clearInterval(typeIntId);
         elt.innerHTML = formattedText;
-    }, (speed * txt.length - 500));
+    }, (speed * txt.length - 200));
     
     // typer function
     function typer() {

@@ -60,10 +60,12 @@
 
 .Site-content {
     flex: 1;
+    background-color: var(--auberge);
 }
 
 body {
-    background-color: var(--auberge);
+    /* background-color: var(--violent); */
+    background: linear-gradient(180deg, var(--violent), var(--violent), rgb(0,0,0,0), var(--periwinkle), var(--periwinkle));    background-color: var(--periwinkle);
     margin-inline: auto;
 }
 
@@ -79,6 +81,8 @@ header {
     /* font-size: 30pt; */
 
     min-width: var(--media-cutoff);
+    position:sticky;
+    top:0;
 }
 /* media query for mobile headers */
 
@@ -256,6 +260,9 @@ footer {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
+
+    /* position:sticky;
+    bottom:0; */
 }
 footer a {
     color: var(--magic);
