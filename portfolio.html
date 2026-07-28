@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Portfolio - Austine</title>
     <link rel="icon" href="/img/wip-color.gif">
+
+
 </head>
-<body>
-    <!-- <noscript>javascript please</noscript> -->
+<body class="Site" onload="runTyper()">
+    <noscript>javascript is not enabled. some animations will not show.</noscript>
 
     <!-- header and navbar menu -->
     <header>
@@ -35,15 +37,16 @@
         </div>
     </header>
 
-    <main>
+    <main class="Site-content">
         <!-- splash text -->
         <section class="splash">
             <div class="splash-wrapper">
-                <p>
+                <p class="typer">
                     here are some of my projects, inside and outside of academics. have any questions, comments, or concerns? feel free to <a href="mailto:zhangaustine@gmail.com" target="_blank">send me a message</a>!
                 </p>
             </div>
         </section>
+
 
         <!-- main content -->
         <section class="wrapper content">                
@@ -59,12 +62,18 @@
 
     <!-- footer -->
     <footer>
-        <div class="flex-item">Copyright Ⓒ 2026 Austine Zhang</div>
+        <div class="flex-item">Copyright &copy; 2026 Austine Zhang</div>
         <div class="flex-item">
             <a class="fancy-link" href="mailto:zhangaustine@gmail.com" target="_blank">Email</a> 
+            <span id="star-sep"> &Star; </span>
             <a href="https://www.linkedin.com/in/austine-zhang/" target="_blank">LinkedIn</a>
         </div>
         <div id="accessibility">Please reach out for any accessibility concerns!</div>
     </footer>
+
+    <!-- js: if there are issues with loading then add `defer` before end of first tag -->
+    <script src="js/animations.js"></script> 
+
+
 </body>
 </html>

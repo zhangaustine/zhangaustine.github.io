@@ -10,7 +10,7 @@
     <title>Austine's Portfolio</title>
     <link rel="icon" href="/img/flat-logo-v1-1.svg">
 </head>
-<body>
+<body class="Site" onload="runTyper()">
     <!-- <noscript>javascript please</noscript> -->
 
     <!-- header and navbar menu -->
@@ -35,12 +35,12 @@
         </div>
     </header>
 
-    <main>
+    <main class="Site-content">
         <!-- splash text -->
         <section class="splash">
             <div class="splash-wrapper">
-                <p>
-                    i just graduated from brown university with a degree in applied math and music and a soft spot for physics. i'm also a purveyor of various arts and crafts. welcome to my page; get cozy and stay awhile!
+                <p class="typer">
+                    i just graduated from brown university with a degree in applied math and music, and a soft spot for physics. i'm also a purveyor of various arts and crafts. welcome to my page; get cozy and stay awhile!
                 </p>
             </div>
         </section>
@@ -59,12 +59,16 @@
 
     <!-- footer -->
     <footer>
-        <div class="flex-item">Copyright Ⓒ 2026 Austine Zhang</div>
+        <div class="flex-item">Copyright &copy; 2026 Austine Zhang</div>
         <div class="flex-item">
             <a class="fancy-link" href="mailto:zhangaustine@gmail.com" target="_blank">Email</a> 
+            <span id="star-sep"> &Star; </span>
             <a href="https://www.linkedin.com/in/austine-zhang/" target="_blank">LinkedIn</a>
         </div>
         <div id="accessibility">Please reach out for any accessibility concerns!</div>
     </footer>
+    
+    <script src="js/animations.js"></script>
+
 </body>
 </html>

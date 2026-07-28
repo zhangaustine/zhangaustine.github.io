@@ -11,7 +11,7 @@
     <title>About - Austine</title>
     <link rel="icon" href="/img/wip-color.gif">
 </head>
-<body>
+<body class="Site" onload="runTyper()">
     <!-- <noscript>javascript please</noscript> -->
 
     <!-- header and navbar menu -->
@@ -35,12 +35,12 @@
         </div>
     </header>
 
-    <main>
+    <main class="Site-content">
         <!-- splash text -->
         <section class="splash">
             <div class="splash-wrapper">
-                <p>
-                    i grew up in maryland but have also grown fond of providence and rhode island. i'm interested in solving real-world problems, forming connections, and keeping my brain active.
+                <p class="typer">
+                    i'm interested in solving real-world problems, creating connections, and keeping my brain active.
                 </p>
             </div>
         </section>
@@ -60,12 +60,16 @@
 
     <!-- footer -->
     <footer>
-        <div class="flex-item">Copyright Ⓒ 2026 Austine Zhang</div>
+        <div class="flex-item">Copyright &copy; 2026 Austine Zhang</div>
         <div class="flex-item">
             <a class="fancy-link href="mailto:zhangaustine@gmail.com" target="_blank">Email</a> 
+            <span id="star-sep"> &Star; </span>
             <a href="https://www.linkedin.com/in/austine-zhang/" target="_blank">LinkedIn</a>
         </div>
         <div id="accessibility">Please reach out for any accessibility concerns!</div>
     </footer>
+
+    <script src="js/animations.js" defer></script>
+
 </body>
 </html>
