@@ -258,6 +258,7 @@ header {
 /* experience page - alternate color themes */
 .position-A {
     background-color:var(--emerald);
+    max-width: 30vw;
     /* h1, use for job title */
     h1 {
 
