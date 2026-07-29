@@ -5,7 +5,7 @@ function runTyper() {
     const elt = document.getElementsByClassName("typer")[0];
     const txt = elt.textContent; // selects first "typer" which should be the splash in all cases hopefully
     const formattedText = elt.innerHTML; //contains format tags
-    let speed = 35; // duration between letters in ms
+    let speed = 50; // duration between letters in ms
     // console.log(txt);
 
     // load with no text
