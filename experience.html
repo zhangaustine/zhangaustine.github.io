@@ -48,11 +48,59 @@
         </section>
 
         <!-- main content -->
-        <section class="wrapper content">       
-            
-            <section class="position-A">
-                <h1>orwig</h1>
-            </section>
+        <section class="wrapper content">  
+
+            <!-- filterable experience clusters -->
+            <div class="flex-container" id="filterSelect">
+
+                <!-- filter control buttons -->
+                <section>
+                    <button class="flt active" onclick="filterSelection('all')">show all</button>
+                </section>
+                <section>
+                    <input type="button" value="arts" class="flt genre" onclick="filterSelection('arts')">
+                    <button class="flt genre" onclick="filterSelection('performs')">performs</button>
+                    <button class="flt genre" onclick="filterSelection('maths')">maths</button>
+                    <button class="flt genre" onclick="filterSelection('physics')">physics</button>
+                    <button class="flt genre" onclick="filterSelection('codes')">codes</button>
+                    <button class="flt genre" onclick="filterSelection('teaches')">teaches</button>
+                    <button class="flt genre" onclick="filterSelection('learns')">learns</button>
+                    <button class="flt genre" onclick="filterSelection('creates')">creates</button>
+                    <button class="flt genre" onclick="filterSelection('leads')">leads</button>
+                    <button class="flt genre" onclick="filterSelection('publics')">publics</button>
+                    <button class="flt genre" onclick="filterSelection('kids')">kids</button>
+                    <button class="flt genre" onclick="filterSelection('researches')">researches</button>
+                    <button class="flt type" onclick="filterSelection('full-time')">full-time</button>
+                    <button class="flt type" onclick="filterSelection('part-time')">part-time</button>
+                    <button class="flt type" onclick="filterSelection('internship')">internship</button>
+                    <button class="flt type" onclick="filterSelection('in-person')">in-person</button>
+                    <button class="flt type" onclick="filterSelection('remote')">remote</button>
+                    <button class="flt type" onclick="filterSelection('hybrid')">hybrid</button>
+                    <button class="flt type" onclick="filterSelection('miscs')">miscs</button>
+                </section>
+
+                <!-- filterable elements -->
+                <section class="filterItems flex-container">
+
+                    <!-- paid jobs -->
+                    <button class="fltitm part-time hybrid codes arts creates miscs">content manager @ patapsco family psychiatry</button>
+                    <button class="fltitm full-time part-time in-person arts learns publics">circulation desk @ orwig music library</button>
+                    <button class="fltitm part-time in-person hybrid physics maths codes learns creates researches">physics student researcher @ brown</button>
+                    <button class="fltitm part-time in-person hybrid physics maths codes learns creates researches arts teaches">physics utra awardee @ brown</button>
+                    <button class="fltitm internship full-time in-person physics maths codes learns creates">quantum computing intern @ fermilab</button>
+                    <button class="fltitm part-time in-person arts teaches creates leads performs">uta, musc 0560 lab @ brown</button>
+                    <button class="fltitm part-time in-person hybrid arts teaches creates leads">uta, musc 0550 @ brown</button>
+                    <button class="fltitm part-time full-time hybrid in-person remote maths physics miscs teaches creates leads">catalyst pre-orientation coordinator @ brown</button>
+                    <button class="fltitm full-time in-person teaches creates arts leads kids miscs">summer camp counselor @ howard county recreation and parks</button>
+                    <button class="fltitm part-time in-person remote hybrid teaches creates arts leads kids miscs performs">freelance summer piano tutor</button>
+
+                    <!-- activities -->
+                    <button class="fltitm part-time in-person remote hybrid teaches creates arts leads performs learns publics codes miscs">co-director, brown university chamber orchestra</button>
+                    <button class="fltitm part-time in-person remote hybrid teaches creates arts leads performs learns publics miscs">events coordinator and secretary, brown ballet company</button>
+                    <button class="fltitm part-time in-person hybrid creates arts performs leads miscs">choreographer, pit keyboardist, pit auxiliary percussion, stage crew, tech @ various brown musical theatre productions</button>
+                    <button class="fltitm part-time in-person creates arts performs miscs">low team maneuvers, brown club figure skating</button>
+                </section>
+            </div>
             
             <!-- under construction -->
             <div class="flex-container notice">
@@ -77,6 +125,6 @@
     </footer>
 
     <script src="js/animations.js" defer></script>
-
+    <script src="js/filterContent.js"></script>
 </body>
 </html>

@@ -138,11 +138,11 @@ header {
 }
 @keyframes rainbow {
     0% {color: var(--bloch);}
-    20% {color: var(--rose);}
-    30% {color: var(--periwinkle);}
-    60% {color: var(--slimey);}
+    25% {color: var(--rose);}
+    50% {color: var(--periwinkle);}
+    /* 60% {color: var(--slimey);} */
     75% {color: var(--mint);}
-    80% {color: var(--seafoam);}
+    /* 75% {color: var(--seafoam);} */
     /* 95% {color: var(--bloch);} */
     100% {color: var(--bloch);}
 }
@@ -254,6 +254,45 @@ header {
     background-color: var(--auberge);
     /* align-items: center; */
 }
+
+/* experience page - filter buttons */
+.filterItems {
+    overflow:hidden;
+}
+.fltitm {
+    float: left;
+    background-color: var(--periwinkle);
+    color: var(--seafoam);
+    display: none; /* hidden by default */
+}
+.fltitm:hover {
+    cursor: help;
+}
+/* "show" class added to filtered elements */
+.show { 
+    display: block;
+}
+.flt {
+    border: none;
+    outline: none;
+    /* background-color: var(--bloch); */
+    color: var(--bloch);
+    background: none;
+    background: url('/img/button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+/* add special cursor?? */
+    cursor: pointer;
+}
+.flt:hover {
+    background-color: var(--slimey);
+}
+.flt.active {
+    background-color: var(--emerald);
+    color: var(--bloch);
+}
+
 
 /* experience page - alternate color themes */
 .position-A {
